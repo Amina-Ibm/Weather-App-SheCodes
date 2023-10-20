@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7f9d47b654.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <main class="container">
+      <form id="form">
+        <div class="left">
+          <input id="text" type="text" placeholder="  Enter a city" />
+
+          <button class="btn btn-success current">Current</button><br />
+          <button
+            class="btn btn-success search"
+            style="position: absolute; right: 268px; bottom: 320px;"
+          >
+            Search
+          </button>
+          <p>
+            <span id="city">Lahore</span><span>, </span
+            ><span id="country">Pakistan</span><br />
+            <span id="day"> Friday</span> <span id="hour">9</span>:<span
+              id="minute"
+              >00</span
+            ><br />
+            <span id="description">Sunny</span>
+          </p>
+          <div class="row">
+            <div class="col-6">
+              <div class="weather">
+                <i class="fa-solid fa-sun" style="color: #fff130;"></i>
+                <strong>38</strong>
+              </div>
+              <span
+                >°<a id="celsius">C</a> | <a id="fheat" href="#">°F</a></span
+              >
+            </div>
+            <div class="col-6">
+              <p>
+                Precipitation: 3%<br />
+                Humidity:
+                <a id="hum" style="text-decoration: none;">54</a>%<br />
+                Wind: 10 km/h<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+    <script src="src/index.js"></script>
+  </body>
+  <footer style="text-align: center;"><a src="">Github link</a><br>Coded by Amina Ibrahim</footer>
+</html>
